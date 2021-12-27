@@ -75,4 +75,4 @@ async def on_message(message):
             await message.channel.send(', '.join(runepage))
 
 
-client.run('NzkxMDIxNjA1NzUyNTM3MDk5.X-JGRw.oHiF1DCgpp0wrxeTj0bhzF03hGY')
+client.run('Hidden Key') #Hidden key to protect bot from potential changes
