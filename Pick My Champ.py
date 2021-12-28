@@ -3,7 +3,7 @@ import discord
 
 client = discord.Client()
 
-
+# List of all champions in League of Legends
 champ = ['Aatrox', ' Akali', ' Aurelion Sol', ' Ahri', ' Alistar', ' Amumu', ' Anivia', ' Annie', ' Ashe', ' Azir',
          ' Bard', ' Blitzcrank', ' Brand', ' Braum', ' Camille', ' Caitlyn', ' Cassiopeia', ' Cho Gath', ' Corki',
          ' Darius', ' Dr. Mundo', ' Diana', ' Draven', ' Ekko', ' Elise', ' Evelynn', ' Ezreal', ' Fiddlesticks',
@@ -22,6 +22,7 @@ champ = ['Aatrox', ' Akali', ' Aurelion Sol', ' Ahri', ' Alistar', ' Amumu', ' A
          ' Zilean', ' Zoe', ' Zyra', ' Yuumi', ' Tibbers', ' Senna', ' Qiana', ' Sett', ' Aphelios', ' Lillia',
          ' Yone']
 
+# List of all rune trees in League of Legends
 runes = ['Precision', 'Domination', 'Sorcery', 'Resolve', 'Inspiration']
 
 pkeystone = ['Press the Attack','Lethal Tempo', 'Fleet Footwork', 'Conqueror']
@@ -50,7 +51,7 @@ itomorrow = ["Future's Market", 'Minion Dematerializer', 'Biscuit Delivery']
 ibeyond = ['Cosmic Insight', 'Approach Velocity', 'Time Warp Tonic']
 
 
-
+# Runs based on user commands, !pmc or !pickmychamp picks a random champion, !pmr or !pickmyrune picks a random rune set
 @client.event
 async def on_message(message):
     if message.content.startswith('.pickmychamp') or message.content.startswith('.pmc'):
